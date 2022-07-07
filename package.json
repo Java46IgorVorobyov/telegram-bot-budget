@@ -5,17 +5,25 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/google-spreadsheet": "^3.2.3",
+    "@types/mocha": "^9.1.1",
+    "@types/parsimmon": "^1.10.6",
+    "google-auth-library": "^8.1.0",
+    "google-spreadsheet": "^3.3.0",
+    "parsimmon": "^1.18.1",
     "telegraf": "^4.8.5",
     "typescript": "^4.7.4"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
+    "@types/node": "^18.0.3",
+    "assert": "^2.0.0",
+    "mocha": "^10.0.0",
     "nodemon": "^2.0.18",
     "ts-node": "^10.8.1"
   }
